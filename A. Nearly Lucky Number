@@ -1,0 +1,15 @@
+n=int(input())
+x=[int(x) for x in str(n)]
+dig=[4,7]
+dig_string="".join([str(i) for i in dig])
+all_elem="".join([str(i) for i in x])
+my_result = True
+for i in all_elem:
+    for j in i:
+        if j not  in dig_string:
+            my_result= False
+            break
+if my_result==True:
+    print("yes")
+else:
+    print("NO")
